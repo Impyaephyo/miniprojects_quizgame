@@ -6,24 +6,39 @@ if game.lower() == "yes":
     print("Let's play!!!")
 else:
     print("Okay byeee!!!")
+    quit()
 
-question = input("What does CPU stand for ? : ")
-if question.lower() == "central processing unit":
+score = 0
+
+
+question1 = input("What does CPU stand for ? : ")
+if question1.lower() == "central processing unit":
     print("Corret!!!")
+    score += 1
 else:
     print("Incorrect!!!")
 
-question1 = input("What does GPU stand for ? : ")
-if question1.lower() == "graphic processing unit":
+question3 = input("What does GPU stand for ? : ")
+if question3.lower() == "graphic processing unit":
     print("Correct")
+    score += 1
 else:
     print("Incorrect!!!")
 
-question2 = input("What does RAM stand for ? : ")
-if question2.lower() == "random access memory":
+question4 = input("What does RAM stand for ? : ")
+if question4.lower() == "random access memory":
     print("Correct!!!")
+    score += 1
+else:
+    print("Incorrect!!!")
+
+question3 = input("What does PSU stnad for ? : ")
+if question3.lower() == "power supply":
+    print("Correct!!!")
+    score += 1
 else:
     print("Incorrect!!!")
 
 print("Thanks for playing!")
-#Git Test 2 / 3
+print("You got",score,"question correct!")
+print("You got",int(score)/4*100,"% ")
