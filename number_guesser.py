@@ -1,1 +1,1 @@
-print("Testing")
+print(input("What is your name : "))
